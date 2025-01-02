@@ -18,13 +18,10 @@ class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
       switch (event) {
         case NavigationEvents.HomePageClickedEvent:
           emit(Homepage());
-          break;
         case NavigationEvents.MyAccountClickedEvent:
           emit(Myaccounts());
-          break;
         case NavigationEvents.MyOrdersClickedEvent:
           emit(Myorders());
-          break;
       }
     });
   }
